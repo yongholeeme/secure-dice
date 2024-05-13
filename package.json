@@ -2,10 +2,18 @@
     "name": "@yongholeeme/secure-dice",
     "version": "0.0.1",
     "description": "",
-    "main": "index.js",
-    "type": "module",
+    "module": "./dist/index.es.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.es.js",
+            "types": "./dist/index.d.ts"
+        },
+        "./style": "./dist/style.css"
+    },
     "scripts": {
         "clean": "rm -rf ./dist",
+        "build": "tsc && vite build",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build",
         "format": "prettier --check '**/*.{ts,tsx,js,jsx,json}'",
@@ -35,7 +43,8 @@
         "prettier": "^3.2.5",
         "storybook": "^8.0.10",
         "typescript": "^5.4.5",
-        "vite": "^5.2.11"
+        "vite": "^5.2.11",
+        "vite-plugin-dts": "^3.9.1"
     },
     "peerDependencies": {
         "react": "^17 || ^18",

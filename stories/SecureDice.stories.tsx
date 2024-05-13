@@ -1,6 +1,6 @@
 import type {Meta, StoryObj} from '@storybook/react'
 
-import {SecureDice} from '../'
+import {SecureDice} from '../src'
 
 const meta = {
     title: 'SecureDice',
