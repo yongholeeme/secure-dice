@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import styles from './SecureDice.module.css'
 
 export function SecureDice() {
     const [diceValue, setDiceValue] = useState(1)
@@ -9,8 +10,10 @@ export function SecureDice() {
 
     return (
         <div>
-            <div>{diceValue}</div>
-            <button onClick={rollDice}>주사위 굴리기</button>
+            <div className={styles.diceContainer}>{diceValue}</div>
+            <button className={styles.rollButton} onClick={rollDice}>
+                주사위 굴리기
+            </button>
         </div>
     )
 }
