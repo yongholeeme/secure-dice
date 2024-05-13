@@ -52,5 +52,8 @@
     },
     "dependencies": {
         "@yongholeeme/secure-random": "^0.0.6"
-    }
+    },
+    "files": [
+        "dist"
+    ]
 }
