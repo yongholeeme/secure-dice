@@ -49,5 +49,8 @@
     "peerDependencies": {
         "react": "^17 || ^18",
         "react-dom": "^17 || ^18"
+    },
+    "dependencies": {
+        "@yongholeeme/secure-random": "^0.0.6"
     }
 }
