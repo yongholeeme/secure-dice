@@ -1,6 +1,6 @@
 {
     "name": "@yongholeeme/secure-dice",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "",
     "module": "./dist/index.es.js",
     "types": "./dist/index.d.ts",
