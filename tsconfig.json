@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "lib": ["ES2023", "DOM"],
+        "module": "ESNext",
+        "target": "ES2022",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "moduleResolution": "node",
+        "baseUrl": "./src",
+        "outDir": "./dist",
+        "jsx": "react"
+    },
+    "include": ["./src", "./typings"],
+    "exclude": ["node_modules", "dist"]
+}
